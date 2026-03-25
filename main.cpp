@@ -1,14 +1,13 @@
 #include <QApplication>
-#include <QWidget>
+#include "login_window.h"
 
 int main(int argc, char *argv[])
 {
-    // 创建一个QApplication对象
     QApplication app(argc, argv);
-    QWidget window;
-    window.resize(320, 240);
-    window.setWindowTitle("TestQtUi");
-    window.show();
+
+    LoginWindow login;
+    login.show();
+
     return app.exec();
 }
 

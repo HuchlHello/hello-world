@@ -23,7 +23,13 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-add_executable(${PROJECT_NAME} main.cpp)
+add_executable(${PROJECT_NAME}
+    main.cpp
+    login_window.cpp
+    table_dialog.cpp
+    data_user_repository.cpp
+    usecase_login.cpp
+)
 message(STATUS "Executable target added: ${PROJECT_NAME}")
 
 # Link Qt libraries
